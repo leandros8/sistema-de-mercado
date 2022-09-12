@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #eee;
+}
+
 .container{
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     border: 1px solid #888;
 }
@@ -23,15 +27,18 @@ header{
 .header-title{
     display: flex;
     align-items: center;
-    width: 20%;
+    width: 25%;
     height: 100%;
     text-align: center;
     border-right: 2px solid #888;
 }
 
 .header-client{
-    width: 80%;
+    width: 75%;
     padding-left: 20px;
+    background: #888;
+    height: 100%;
+    padding: 15px;
 }
 
 section{
@@ -39,33 +46,77 @@ section{
 }
 
 .box-left{
-    width: 20%;
+    width: 25%;
     height: 100%;
     border-right: 2px solid #888;
-    padding: 0 20px;
+    padding: 0 50px;
+    background-color: #888;
 }
 
 .box-right{
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    align-items: flex-start;
+    width: 75%;
+    background: white;
 }
 
-.box-left .card{
-    height: 100px;
+.card{
     margin:20px 0;
-    background: pink;
     cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 8px black;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.box-left .card:nth-child(1){
+  background: green;
+}
+
+.box-left .card:nth-child(2){
+ background: violet;  
+}
+
+.box-left .card:nth-child(3){
+   background: blue;
+}
+
+.box-left .card:nth-child(4){
+   background: red;
 }
 
 .box-left .card:nth-child(5){
-    height: 50px;
+    background: rgb(132, 132, 7);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.card .img-wraper{
+    width: 70px;
+    margin: 5px auto;
+}
+
+.card .img-wraper img{
+    width: 100%;
+}
+
+.card span{
+    display: block;
+    text-align: right;
+}
+
+
 
 .box-right .card{
     width: 200px;
-    height: 100px;
+    
     margin:20px;
     background: pink;
     cursor: pointer;
 }
+
