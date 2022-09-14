@@ -21,80 +21,36 @@
             </div>
         </header>
         <section>
-            <div class="box-left">
-                <div class="card">
-                    <a href="#">
-                        <span>F1</span>
-                        <div class="img-wraper">
-                            <img src="imgs/carrinho.png">
-                        </div>
-                        <h2>Vendas</h2>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <span>F2</span>
-                        <div class="img-wraper">
-                            <img src="imgs/calculadora.png">
-                        </div>
-                        <h2>Financeiro</h2>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <span>F3</span>
-                        <div class="img-wraper">
-                            <img src="imgs/usuarios.png">
-                        </div>
-                        <h2>Cadastros</h2>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <span>F4</span>
-                        <div class="img-wraper">
-                            <img src="imgs/nota.png">
-                        </div>
-                        <h2>Operacional</h2>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="vender.html">
-                        <h2>Vender</h2>
-                        <span>F5</span>
-                    </a>
-                </div>
-            </div>
-            <div class="box-right">
-                <div class="card">
-                    <a href="#">
-                        <div class="img-wraper">
-                            <img src="imgs/calendario.png">
-                        </div>
-                        <h2>Vendas</h2>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                    <div class="img-wraper">
-                        <img src="imgs/carrinho.png">
-                    </div>
-                    <h2>Vendas</h2>
-                    </a>
+            <div class="vender-box-left">
+
+                <div class="box-left-vender-grid" <span>Quantidade</span>
+                    <span>Codigo barras/interno</span>
+                    <input id="qntd" value="01,00" type="number">
+                    <input id="cod_barr" type="text">
+
+                    <span>Telefone</span>
+                    <span>Tab</span>
+                    <input type="text">
+                    <input value="1" type="number">
                 </div>
 
-                <div class="card">
-                    <a href="#">
-                    <div class="img-wraper">
-                        <img src="imgs/vendas.png">
-                    </div>
-                    <h2>Vendas</h2>
-                    </a>
-                </div>
+                <span>CPF/CNPJ</span>
+                <input type="text">
+                <span>Cliente</span>
+                <input type="text" value="Consumidor">
+            </div>
+            <div class="box-right">
+
 
             </div>
         </section>
     </div>
+
+    <script>
+        (() => {
+            setTimeout(() => window.location.href = '/vender.html', 2000);
+        })();
+    </script>
 
 </body>
 
