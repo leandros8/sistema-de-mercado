@@ -13,32 +13,35 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     border: 1px solid #888;
+    display: none;
 }
 
 header{
-    background: blue;
+    background: #0f446c;
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #888;
+    color: #edfeff;
 }
 
 .header-title{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 25%;
     height: 100%;
-    text-align: center;
     border-right: 2px solid #888;
 }
 
 .header-client{
     width: 75%;
     padding-left: 20px;
-    background: #888;
+    background: #e1e1e1;
     height: 100%;
     padding: 15px;
+    color: #404040;
 }
 
 section{
@@ -50,7 +53,7 @@ section{
     height: 100%;
     border-right: 2px solid #888;
     padding: 0 50px;
-    background-color: #888;
+    background-color: #d4d4d4;
 }
 
 .box-right{
@@ -58,7 +61,7 @@ section{
     justify-content: space-evenly;
     align-items: flex-start;
     width: 75%;
-    background: white;
+    background-color: #fff;
 }
 
 .card{
@@ -75,27 +78,27 @@ section{
     text-decoration: none;
     display: block;
     padding: 10px;
-    color: white;
+    color: #edfeff;
 }
 
 .box-left .card:nth-child(1){
-  background: green;
+  background: #188238;
 }
 
 .box-left .card:nth-child(2){
- background: violet;  
+ background: #7f65a2;  
 }
 
 .box-left .card:nth-child(3){
-   background: blue;
+   background: #367cc2;
 }
 
 .box-left .card:nth-child(4){
-   background: red;
+   background: #ff4c23;
 }
 
 .box-left .card:nth-child(5){
-    background: rgb(132, 132, 7);
+    background: #ff9801;
 }
 
 .box-left .card:nth-child(5) a{
@@ -128,36 +131,312 @@ section{
 }
 
 .box-right .card:nth-child(1){
-    background: rgb(132, 132, 7);
+    background: #ff9801;
 }
 
 .box-right .card:nth-child(2){
-    background: red;
+    background: #f44336;
 }
 
 .box-right .card:nth-child(3){
-    background: green
+    background: #4cb050
 }
 
-.vender-box-left{
-    width: 25%;
-    height: 100%;
-    border-right: 2px solid #888;
-    background-color: #888;
+.box-left.vender{
+    color: #404040;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.box-left.box-left.vender input{
+    width: 100%;
+    height: 33px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.box-left.box-left.vender input:focus{
+    background: #ffffc0;
+    outline: 0;
+}
+
+.box-left.box-left.vender span{
+    margin-bottom: 5px;
+    float: left;
+    padding: 0 7px;
+}
+
+.box-left.vender #qtd{
+    width: 35%;
+    float: left;
+}
+
+.box-left.vender #cod_barr{
+    width: 60%;
+    float: right;
+}
+
+.box-left.vender .tel{
+    float: left;
+}
+
+.box-left.vender #tel{
+    width: 80%;
+    float: left;
+}
+
+.box-left.vender #tab{
+    width: 15%;
+    float: right;
+}
+
+
+.box-left.vender .space{
+    width: 90%;
+    margin: 5%;
+    height: 220px;
+    border: 2px solid black;
+}
+
+.vender-up{
+    height: 80%;
+    border: 2px solid #000;
+    margin: 5px;
+}
+
+.vender-header{
+    background: #c0c0ff;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    padding:0 5px;
+    justify-content: space-around;
+    padding: 3px 0;
+    border-bottom: 3px solid #000;
+    margin-bottom: 10px;
 }
 
-.box-left-vender-grid{
-    display: grid;
-    grid-template-columns: repeat(12, fr);
+.vender-header span{
+   display: block;
+   text-align: center;
+   border-left: 1px solid #000;
 }
 
-.vender-box-left input{
-    height: 40px;
+.vender-header span:nth-child(1){
+    border: 0;
+    width: 10%;
 }
 
-.vender-box-left #qntd{
-    grid-column: 1 / 9;
+.vender-header span:nth-child(2){
+    width: 10%;
+}
+
+.vender-header span:nth-child(3){
+    width: 40%;
+}
+
+.vender-header span:nth-child(4){
+    width: 10%;
+}
+
+.vender-header span:nth-child(5){
+    width: 15%;
+}
+
+.vender-header span:nth-child(6){
+    width: 15%;
+}
+
+.vender-itens li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 0;
+}
+
+.vender-itens li span{
+    display: block;
+    text-align: center;
+ }
+ 
+ .vender-itens li span:nth-child(1){
+     border: 0;
+     width: 10%;
+ }
+ 
+ .vender-itens li span:nth-child(2){
+     width: 10%;
+ }
+ 
+ .vender-itens li span:nth-child(3){
+     width: 40%;
+ }
+ 
+ .vender-itens li span:nth-child(4){
+     width: 10%;
+ }
+ 
+ .vender-itens li span:nth-child(5){
+     width: 15%;
+ }
+ 
+ .vender-itens li span:nth-child(6){
+     width: 15%;
+ }
+
+.vender-down .box-total{
+    background: #78c940;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    float: right;
+}
+
+.vender-down .vender-funcoes{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.vender-down .vender-funcoes button{
+    background: #0f446c;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #7e9ab0;
+    cursor: pointer;
+}
+
+
+.finalizar-venda{
+    background-color: #ffe0c0;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.finalizar-header{
+    background: #0f446c;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f4f6f8;
+    font-size: 20px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.finalizar-header .close{
+    text-align: center;
+    cursor: pointer;
+}
+
+.finalizar-header .close span{
+    font-size: 10px;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+}
+
+.finalizar-main .left{
+    border: 1px solid #000;
+    margin: 2%;
+    width: 40%;
+    padding: 10px 5px 0 5px;
+    float: left;
+}
+
+.finalizar-main .left .valor{
+    background: #78c940;
+    height: 60px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.finalizar-main .left .valor .s1{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.finalizar-main .left .valor .s2{
+    display: block;
+    text-align: right;
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.finalizar-main .left .valor .s3{
+    margin: 0 5px;
+}
+
+.finalizar-main .left .valor input{
+    background-color: #c0ffc0;
+    width: 60%;
+    height: 25px;
+    border: 1px solid #71a84b;
+    padding: 0 8px;
+}
+
+.finalizar-main .left .valor .inp1{
+    width: 20%;
+}
+
+.finalizar-main .right{
+    width: 55%;
+    float: right;
+    padding: 10px 5px;
+}
+
+.finalizar-main .right .s1{
+    width: 65%;
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.finalizar-main .right .s2{
+    float: right;
+    width: 30%;
+    padding-left: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.finalizar-main .right .inp1{
+    width: 65%;
+    height: 25px;
+    margin-top: 5px;
+    border: 2px solid #a5a4a2;
+    padding: 0 8px;
+}
+
+.finalizar-main .right .inp2{
+    float: right;
+    width: 30%;
+    height: 25px;
+    margin-top: 5px;
+    background: #c0ffc0;
+    border: 2px solid #a5a4a2;
+    padding: 0 8px;
+}
+
+
+.finalizar-main .right .pagamentos{
+    border: 2px solid #848484;
+    background: #e0e0e0;
+    margin-top: 10px;
+    
 }

@@ -12,43 +12,147 @@
 <body>
     <div class="container">
         <header>
-            <div class="header-title">
-                <h1>Gestor Mercado</h1>
+            <div style="justify-content: start; padding-left:30px" class="header-title">
+                <h1>PDV</h1>
             </div>
             <div class="header-client">
-                <h4>Licença 28/12/2021</h4>
-                <h1>Farmacia Abaeté</h1>
+                <h4>Licença para:</h4>
+                <h1>Farmacia e Perfumaria Abaeté</h1>
             </div>
         </header>
         <section>
-            <div class="vender-box-left">
+            <div class="box-left vender">
 
-                <div class="box-left-vender-grid" <span>Quantidade</span>
-                    <span>Codigo barras/interno</span>
-                    <input id="qntd" value="01,00" type="number">
-                    <input id="cod_barr" type="text">
+                <span class="qtd">Quantidade</span>
+                <span style="float:right" class="cod_barr">Codigo barras/interno</span>
+                <input id="qtd" value="1.00" type="number">
+                <input id="cod_barr" type="text">
 
-                    <span>Telefone</span>
-                    <span>Tab</span>
-                    <input type="text">
-                    <input value="1" type="number">
-                </div>
+                <span class="tel">Telefone</span>
+                <span style="float:right" class="tab">Tab</span>
+                <input id="tel" type="text">
+                <input id="tab" value="1" type="number">
 
                 <span>CPF/CNPJ</span>
                 <input type="text">
                 <span>Cliente</span>
                 <input type="text" value="Consumidor">
-            </div>
-            <div class="box-right">
 
+                <div class="space"></div>
+
+                <div style="text-align: center;">Esc - voltar</div>
+            </div>
+            <div style="display:block;" class="box-right">
+
+                <div class="vender-up">
+                    <div class="vender-header">
+                        <span>Item</span>
+                        <span>Codigo</span>
+                        <span>Produto</span>
+                        <span>Qtda</span>
+                        <span>Valor Unit.</span>
+                        <span>Sub Total</span>
+                    </div>
+
+                    <ul class="vender-itens">
+                        <li>
+                            <span>2</span>
+                            <span>23165</span>
+                            <span>Cafe sonha</span>
+                            <span>3</span>
+                            <span>5,00</span>
+                            <span>15,00</span>
+                        </li>
+
+                        <li>
+                            <span>2</span>
+                            <span>23165</span>
+                            <span>Cafe sonha</span>
+                            <span>3</span>
+                            <span>5,00</span>
+                            <span>15,00</span>
+                        </li>
+
+                        <li>
+                            <span>2</span>
+                            <span>23165</span>
+                            <span>Cafe sonha</span>
+                            <span>3</span>
+                            <span>5,00</span>
+                            <span>15,00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="vender-down">
+
+                    <div class="box-total">
+                        <span>R$</span>
+                        <span>19,54</span>
+                    </div>
+
+                    <div class="vender-funcoes">
+                        <button>F1 Receber</button>
+                        <button>F2 Novo</button>
+                        <button>F3 Historico</button>
+                        <button>F4 Entrega</button>
+                        <button>F5 Produtos</button>
+                        <button>F6 Clientes</button>
+                        <button>F8 Diversos</button>
+                        <button>F9 Editar</button>
+                    </div>
+                </div>
 
             </div>
         </section>
     </div>
 
+    <div class="finalizar-venda">
+        <div class="finalizar-header">
+            <span>Pagamento</span>
+            <div class="close">
+                X
+                <span>Esc - voltar</span>
+            </div>
+        </div>
+
+        <div class="finalizar-main">
+            <div class="left">
+                <div class="valor">
+                    <span>Sub-total</span>
+                    <span class="s2">15,00</span>
+                </div>
+                <div class="valor">
+                    <span class="s1">Desconto</span>
+                        <input value="0" class="inp1" type="text">
+                        <span class="s3">%</span>
+                        <input value="0" class="inp2" type="text">
+                </div>
+                <div class="valor">
+                    <span>Total</span>
+                    <span class="s2">15,00</span>
+                </div>
+            </div>
+            <div class="right">
+                <span class="s1">Forma de pagamento</span>
+                <span class="s2">Valor</span>
+                <input class="inp1" type="text">
+                <input value="0" class="inp2" type="text">
+                <div class="pagamentos">
+                    <span>Forma de Pagamento</span>
+                    <span>Valor</span>
+
+                    <span>Credito</span>
+                    <span>25,11</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <script>
         (() => {
-            setTimeout(() => window.location.href = '/vender.html', 2000);
+            //  setTimeout(() => window.location.href = '/vender.html', 2000);
         })();
     </script>
 
